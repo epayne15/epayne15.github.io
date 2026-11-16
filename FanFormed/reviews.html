@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FanFormed: Event Reviews. Practical live event advice for fans.">
+    <title>Event Reviews | FanFormed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo.jpg" alt="FanFormed — Beyond the Ticket" width="500" height="283"></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a aria-current="page" href="reviews.html">Event Reviews</a></li>
+                <li><a href="venues.html">Venue Guides</a></li>
+                <li><a href="plan.html">Plan Your Visit</a></li>
+                <li><a href="about.html">About &amp; Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Event Reviews</h1>
+        <p>Read fictional sample reviews focused on the experience beyond the ticket. These are not actual attendee reports.</p>
+        <div class="featured-grid">
+            <article id="stadium-review" class="review-card">
+                <img src="assets/stadium.jpg" alt="Bank of America Stadium" width="1333" height="1000">
+                <div class="card-body">
+                    <p class="category">Sample review &middot; Sports</p>
+                    <h2>Football game at Bank of America Stadium</h2>
+                    <p>Example rating: 4/5</p>
+                    <p>Plan your parking and check the stadium entrance before game day. In this example, preparing ahead helped the fan enjoy the event. Check current venue rules before your visit.</p>
+                </div>
+            </article>
+            <article id="concert-review" class="review-card">
+                <img src="assets/truliant.jpg" alt="Truliant Amphitheater" width="780" height="439">
+                <div class="card-body">
+                    <p class="category">Sample review &middot; Concerts</p>
+                    <h2>Outdoor concert at Truliant Amphitheater</h2>
+                    <p>Example rating: 4/5</p>
+                    <p>Check the weather, seating type and bag policy before an outdoor show. In this example, preparing ahead helped the fan enjoy the event. Check current venue rules before your visit.</p>
+                </div>
+            </article>
+            <article id="arena-review" class="review-card">
+                <img src="assets/spectrum.jpg" alt="Spectrum Center" width="1400" height="934">
+                <div class="card-body">
+                    <p class="category">Sample review &middot; Sports &amp; concerts</p>
+                    <h2>Arena event at Spectrum Center</h2>
+                    <p>Example rating: 4/5</p>
+                    <p>Review your seating section and transportation options before arriving. In this example, preparing ahead helped the fan enjoy the event. Check current venue rules before your visit.</p>
+                </div>
+            </article>
+        </div>
+        <section id="review-form">
+            <h2>Submit an event review</h2>
+            <p>Practice form only: submissions are not saved or sent.</p>
+            <form action="#" method="get">
+                <label for="event">Event name</label>
+                <input id="event" name="event" required type="text" class="form-control">
+                <label for="type">Event type</label>
+                <select id="type" name="type" required class="form-control">
+                    <option value="">Choose a type</option>
+                    <option>Concert</option>
+                    <option>Sports</option>
+                    <option>Festival</option>
+                    <option>Motorsports</option>
+                    <option>Other</option>
+                </select>
+                <label for="venue">Venue / location</label>
+                <input id="venue" name="venue" type="text" required class="form-control">
+                <label for="date">Date attended</label>
+                <input id="date" name="date" type="date" required class="form-control">
+                <label for="rating">Overall rating (1–5)</label>
+                <input id="rating" name="rating" type="number" min="1" max="5" required class="form-control">
+                <fieldset>
+                    <legend>Topics covered</legend>
+                    <label><input name="topic" type="checkbox" value="parking"/> Parking</label>
+                    <label><input name="topic" type="checkbox" value="seating"/> Seating</label>
+                    <label><input name="topic" type="checkbox" value="accessibility"/> Accessibility</label>
+                </fieldset>
+                <label for="review">Your review</label>
+                <textarea id="review" name="review" rows="5" required class="form-control"></textarea>
+                <div class="actions">
+                    <input type="submit" value="Submit review">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>FanFormed: Beyond the Ticket | CIS 300 student project</p>
+        <p><a href="about.html">About &amp; Feedback</a> · <a href="mailto:epayne15@asu.edu">Email the site creator</a></p>
+    </footer>
+</body>
+</html>
